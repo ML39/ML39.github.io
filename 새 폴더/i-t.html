@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+			<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		li{
+			list-style-type: none;
+		}
+		header{
+			width: 1000px;
+			height: 100px;
+			margin-top: 10px;
+		}
+		#logo{
+			margin-top: 20px;
+		}
+		#top{
+			float: right;
+			margin: 30px 20px 0 0;
+		}
+		nav{
+			z-index: 3;
+			position: relative;
+			width: 1000px;
+			height: 70px;
+			margin-top: 10px;
+		}
+		.dropdown{
+			display: inline-block;
+		}
+		.dropdowncontents{
+			display: none;
+			background-color: #fff;
+			padding: 12px;
+			position: absolute; 
+			border-radius: 10px;
+			vertical-align: middle;
+			opacity: 0.9;
+		}
+		.dropdown:hover .dropdowncontents{
+			display: block;
+		}
+		nav ul{
+			margin-left: 50px; 
+			margin-right: 50px;
+		}
+		nav li{
+			margin-top: 10px;
+		}
+		aside{
+			z-index: 2;
+			position: relative;
+			float: left;
+			margin-top: 10px;
+		}
+		#as{
+			float: left;
+			background-color: #aaaaaa;
+			opacity: 0.9;
+			width: 200px;
+			height: 500px;			
+		}
+		section{
+			z-index: 1;
+		}
+		#page{
+			width: 1000px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+<header>
+	<div id="logo">
+		<a href="./main.html">로고</a>
+	<div id="top">
+		여행 예상 일정: 6월 말 혹은 7월 초
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+<div>
+	<div class="dropdown">
+	<ul>예약하기
+	<div class="dropdowncontents"> 
+		<li><a href="./b-f.html">항공권</a></li>
+		<li><a href="./b-h.html">호텔</a></li>
+	</div>
+	</div>
+	</ul>
+	<div class="dropdown">
+	<ul>주변 정보 찾기
+	<div class="dropdowncontents"> 
+		<li><a href="./i-g.html">맛집</a></li>
+		<li><a href="./i-p.html">놀거리</a></li>
+		<li><a href="./i-t.html">관광명소</a></li>
+	</div>
+	</div>
+	</ul>
+	<div class="dropdown">
+	<ul>여행 팁
+	<div class="dropdowncontents"> 
+	</div>
+	</div>
+	</ul>
+	</ul>
+</div>
+</nav>
+</div>
+</body>
+</html>

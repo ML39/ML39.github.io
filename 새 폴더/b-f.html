@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+			<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+			text-decoration-line: none;
+		}
+		li{
+			list-style-type: none;
+		}
+		header{
+			width: 1000px;
+			height: 100px;
+		}
+		#logo{
+			//margin-top: 20px;
+		}
+		#top{
+			float: right;
+			margin: 30px 20px 0 0;
+			transform: rotate(10deg);
+			transition: transform 5s;
+			border: 3px dashed lime;
+			border-radius: 10px;
+		}
+		#top:hover{
+			transform: scale(2,2);
+			background-image: linear-gradient(orange,yellow,cyan)
+		}
+		nav{
+			z-index: 3;
+			position: relative;
+			width: 1000px;
+			height: 70px;
+			margin-top: 30px;
+		}
+		.dropdown{
+			display: inline-block;
+		}
+		.dropdowncontents{
+			display: none;
+			background-color: #fff;
+			padding: 12px;
+			position: absolute; 
+			border-radius: 10px;
+			vertical-align: middle;
+			opacity: 0.9;
+			border: 1px solid skyblue;
+		}
+		.dropdown:hover .dropdowncontents{
+			display: block;
+		}
+		nav ul{
+			margin-left: 50px; 
+			margin-right: 50px;
+		}
+		nav li{
+			margin-top: 10px;
+		}
+		aside{
+			z-index: 2;
+			position: relative;
+			float: left;
+			margin-top: 50px;
+		}
+		#as{
+			float: left;
+			background-image: linear-gradient(skyblue, white);
+			opacity: 0.9;
+			width: 150px;
+			height: 500px;			
+		}
+		h3{
+			text-align: center;
+		}
+		ul li{
+			text-align: left;
+			margin-top: 10px;
+			margin-left: 5px;
+		}
+		section{
+			z-index: 1;
+		}
+		h2{
+			margin-top: 10px;
+			text-align: center;
+		}
+		.a{
+			margin-top: 30px;
+			margin-right: 20px;
+			font-size: 17px; 
+		}
+		#m{
+			margin-top: 50px;
+			margin-right: auto;
+			margin-left: auto;
+			z-index: 1;
+			border: solid 3px skyblue;
+			border-radius: 0.5em;
+			width: 500px;
+			height: 500px;
+		}
+		#page{
+			width: 1000px;
+			margin: auto;
+		}
+		#flights{
+			float: right;
+			margin-top: 50px;
+			margin-right: 10px;
+			background-color: white;
+			border-radius: 5px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+<header>
+	<div id="logo">
+		<a href="./main.html"><img src="./img/logo.jpg" width="150" height="150" class="img"></a>
+	<div id="top">
+		여행 예상 일정: 6월 말 혹은 7월 초<br>
+	 	여행 예정지: 도쿄
+	</div>
+</header>
+<nav>
+<div>
+	<div class="dropdown">
+	<ul>예약하기
+	<div class="dropdowncontents"> 
+		<li><a href="./b-f.html">항공권</a></li>
+		<li><a href="./b-h.html">호텔</a></li>
+	</div>
+	</div>
+	</ul>
+	<div class="dropdown">
+	<ul>하고 싶은 것들
+	<div class="dropdowncontents"> 
+		<li><a href="./i-g.html">먹고 싶은 것들</a></li>
+		<li><a href="./i-p.html">가보고 싶은 곳들</a></li>
+	</div>
+	</div>
+	</ul>
+	<div class="dropdown">
+	<ul>여행 팁
+	<div class="dropdowncontents"> 
+		<li><a href="./tip.html">여행 팁</a></li>
+		<li><a href="./tip-c.html">여행 경비 계산기</a></li>
+	</div>
+	</div>
+	</ul>
+</div>
+</nav>
+<aside>
+<div id="as">
+	<ul><h3>예약하기</h3>
+		<li><a href="./b-f.html">항공권</a></li>
+		<li><a href="./b-h.html">호텔</a></li>
+	</ul>
+</div>
+</aside>
+<section>
+	<div id="m">
+		<h2>저가 항공사 이용하기</h2>
+		<ul>
+			<li class="a">
+				일반적인 항공사보다 저렴하게 편도로 약90,000원에 이용할 수 있음
+			</li>
+			<li class="a">
+				저가 항공사는 프로모션도 자주 진행하기 때문에 이런 때를 노리면 할인 된 가격으로 예약 할 수 있지만 경쟁률이 높기 때문에 미리 정보를 접하고 준비를 해서 예약해야 한다.
+			</li>
+			<li class="a">
+				만약 마일리지를 이용하려고 해도 수시로 홈페이지를 확인해 항공권 예매가 가능한지 확인해야 한다. 그렇지 않으면 금방 이코노미석 예약이 꽉차서 비지니스석만 남을 수 있다.
+			</li>
+		</ul>
+		<div id="flights"><a href="https://store.naver.com/flights/?trip=RT&scity1=ICN&scity2=&ecity1=&ecity2=ICN&adult=1&child=0&infant=0&fareType=YC&airlineCode=&nxQuery=%ED%95%AD%EA%B3%B5%EA%B6%8C'">항공권 예매 하러가기→</a></div>
+</section>
+</div>
+</body>
+</html>
